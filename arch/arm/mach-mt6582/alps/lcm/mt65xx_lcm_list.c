@@ -19,7 +19,7 @@
 #endif
 
 extern LCM_DRIVER nt35517_qhd_dsi_vdo_lcm_drv;
-extern LCM_DRIVER hx8389b_qhd_dsi_vdo_tianma_lcm_drv;
+extern LCM_DRIVER ili9806e_fwvga_dsi_vdo_lcm_drv;
 
 
 LCM_DRIVER* lcm_driver_list[] = 
