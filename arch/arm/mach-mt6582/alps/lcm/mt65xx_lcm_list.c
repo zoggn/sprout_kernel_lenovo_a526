@@ -20,7 +20,7 @@
 
 extern LCM_DRIVER nt35517_qhd_dsi_vdo_lcm_drv;
 extern LCM_DRIVER ili9806e_fwvga_dsi_vdo_lcm_drv;
-
+extern LCM_DRIVER ili9806e_fwvga_dsi_vdo_2_lcm_drv;
 
 LCM_DRIVER* lcm_driver_list[] = 
 {
@@ -33,6 +33,10 @@ LCM_DRIVER* lcm_driver_list[] =
 	&ili9806e_fwvga_dsi_vdo_lcm_drv,
 #endif
 
+#if defined(ILI9806E_FWVGA_DSI_VDO_2)
+    &ili9806e_fwvga_dsi_vdo_2_lcm_drv,
+#endif    
+    
 };
 
 #define LCM_COMPILE_ASSERT(condition) LCM_COMPILE_ASSERT_X(condition, __LINE__)
